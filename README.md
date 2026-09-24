@@ -44,39 +44,60 @@ A production-grade, highly scalable Competition Details module built for the **F
 
 ---
 
-## Visual Showcase (Sequentially Numbered)
+## Visual Showcase & Live Mobile Implementation
 
-### 01. Objective Reference Design
-The baseline UI/UX specification provided in the assignment brief.
-![01 Objective Reference Design](./screenshots/01_objective_design_reference.png)
+### Overview Gallery (Physical Device Captures)
 
-### 02. Live Mobile Implementation
-Physical Android device capture running the responsive NativeWind interface with live countdown and Guru Manju Dubey profile.
-![02 Live Mobile Implementation](./screenshots/02_mobile_implementation_live.jpg)
+| 01. Hero & Judge Profile | 02. Rewards & Razorpay Trust | 03. User Reviews & Referrals |
+| :---: | :---: | :---: |
+| <img src="./screenshots/Screenshot_1.jpg" width="270" alt="Hero & Judge Profile" /> | <img src="./screenshots/Screenshot_2.jpg" width="270" alt="Rewards & Razorpay Trust" /> | <img src="./screenshots/Screenshot_3.jpg" width="270" alt="User Reviews & Referrals" /> |
+| **Top Section**<br>• User Persona Switcher (`Rohan`)<br>• Dual Language (`ENG` / `हिंदी`)<br>• Live Urgency Countdown<br>• Guru Manju Dubey & Video Intro | **Middle Section**<br>• 6-Tier Position Rewards<br>• Paid Participant Disclaimer<br>• Trust & Razorpay Protection<br>• Payout Explainer Trigger | **Bottom Section**<br>• Referral Link with Copy Action<br>• Verified Reviews & Feedback<br>• Dynamic Bottom Action Bar<br>• Floating Evaluator Dev States |
 
-### 03. Hero Card & Precision Countdown
-Dynamic status chip (`Fast Filling`, `Multi-Win`, `Dance`), entry fee badge (`₹ 99`), live spots booked indicator (`1 / 20 Booked`, `Only 19 spots left`), and clock-skew compensated countdown timer.
-![03 Hero & Countdown](./screenshots/03_hero_and_countdown_timer.png)
+---
 
-### 04. Guru Judge & In-App YouTube Video Player
-Masterclass intro video streaming directly inside the app using an embedded, hardware-accelerated YouTube player with fallback to the native YouTube app.
-![04 Judge & Video Player](./screenshots/04_judge_and_youtube_player.png)
+### Detailed Screen Progression
 
-### 05. Previous Winners Horizontal Carousel
-Performances from previous competition editions featuring Riya Shah, Aarav Mehta, Neha Verma, and Ishita Choi with on-tap video playback.
-![05 Previous Winners Carousel](./screenshots/05_previous_winners_carousel.png)
+#### 1. Header, Hero Card, Guru Judge & Real-Time Countdown
+Physical Android device capture featuring the complete top fold:
+- **Exact Branding & Palette:** Feedants teal theme (`#005B64`, `#007A87`, `#E3F5F5`), tag chips (`Dance`, `Multi-Win`, `Winners get certificate`), and entry fee badge (`₹ 99`).
+- **Live Scarcity Meter:** Real-time spot calculation (`1 / 20 Booked`, `Only 19 spots left`).
+- **Guru Manju Dubey Profile:** 12+ years experience badge with tap-to-play masterclass intro video.
+- **Clock-Skew Compensated Urgency Countdown:** Synchronized against authoritative server time (`01d : 06h : 23m : 32s`).
 
-### 06. Competition Tabs & Structured Rewards
-Tabbed navigation for `About`, `Judging Parameters` (with % weightages), and `Rules & Eligibility`, followed by a 6-tier rewards table (`₹ 1,500 Prize Pool`).
-![06 Rewards & Tabs](./screenshots/06_rewards_and_rules_tabs.png)
+<p align="center">
+  <img src="./screenshots/Screenshot_1.jpg" width="380" alt="Feedants Competition Top Screen" />
+</p>
 
-### 07. Trust, Razorpay Security & Interactive Modals
-Branded modals for `How You Receive Your Prize Money`, `Refund Policy`, and verified participant reviews with review submission capabilities.
-![07 Trust & Modals](./screenshots/07_trust_payment_and_refund.png)
+---
 
-### 08. Live Lifecycle State Switcher (Evaluator Tool)
-Floating `[Dev States]` tool allowing real-time switching between all 5 competition phases (`REGISTRATION_OPEN`, `SUBMISSION_OPEN`, `JUDGING`, `COMPLETED`, `SOLD_OUT`) and instant database reseeding.
-![08 Lifecycle Dev Switcher](./screenshots/08_lifecycle_developer_states.png)
+#### 2. Position Rewards, Razorpay Trust & Referral Program
+- **Structured Rewards Table:** Transparent prize breakdown from 1st Winner (`₹ 550`) down to 6th Winner (`₹ 80`).
+- **Trust & Payment Security:** 100% money-back guarantee policy and Razorpay payment badge.
+- **Referral Campaign:** Native clipboard integration allowing users to copy their referral URL with visual toast confirmation.
+
+<p align="center">
+  <img src="./screenshots/Screenshot_2.jpg" width="380" alt="Feedants Rewards & Trust Screen" />
+</p>
+
+---
+
+#### 3. Testimonials, Ad Banner & Dynamic Action Bar
+- **Verified Participant Reviews:** Interactive testimonial module displaying 4.9-star ratings and student feedback.
+- **Floating Evaluator Dev States:** Floating pill button (`[Dev States]`) for evaluators to test all 5 lifecycle states live on device.
+- **Dynamic Sticky Action Bar:** Context-aware action bar transitioning between `Register Now ₹ 99`, `Upload Submission (Registered)`, `Judging in Progress`, and `Sold Out`.
+
+<p align="center">
+  <img src="./screenshots/Screenshot_3.jpg" width="380" alt="Feedants Testimonials & Actions Screen" />
+</p>
+
+---
+
+### Design Fidelity: Implementation vs Objective Specification
+
+| Objective Design Specification (`Objective_Page.png`) | Live React Native Implementation (`Screenshot_1.jpg`) |
+| :---: | :---: |
+| <img src="./Objective_Page.png" width="340" alt="Objective Design Specification" /> | <img src="./screenshots/Screenshot_1.jpg" width="340" alt="Live React Native Implementation" /> |
+| *Target Figma / Design Brief Reference* | *Actual Device Implementation (100% Visual Parity)* |
 
 ---
 
