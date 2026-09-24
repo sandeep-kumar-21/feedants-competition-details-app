@@ -36,11 +36,11 @@ A production-grade, highly scalable Competition Details module built for the **F
 
 ## Screen Recording & Video Demonstration
 
-> A complete walkthrough video showcasing live registration, submission, in-app YouTube video streaming, language switching, and real-time lifecycle transitions.
+> A complete walkthrough video showcasing live registration, submission, in-app video streaming, language switching, and real-time lifecycle transitions.
 
-[![Watch Video Walkthrough](https://img.shields.io/badge/YouTube-Watch_Video_Walkthrough-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=JWhA3ldZcyY)
+[![Watch Video Walkthrough](https://img.shields.io/badge/Google_Drive-Watch_Video_Walkthrough-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1EGx9DGaCnKe3bUJYMCc5gqrnNN9FIEX0/view?usp=sharing)
 
-*(Video demonstration link placeholder. Replace with your uploaded recording link once finalized.)*
+Direct Video Link: [Google Drive Walkthrough Video](https://drive.google.com/file/d/1EGx9DGaCnKe3bUJYMCc5gqrnNN9FIEX0/view?usp=sharing)
 
 ---
 
