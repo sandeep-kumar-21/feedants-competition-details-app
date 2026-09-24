@@ -4,7 +4,7 @@ import { UserModel } from '../modules/user/user.model.js';
 import { CompetitionModel } from '../modules/competition/competition.model.js';
 import { RegistrationModel } from '../modules/registration/registration.model.js';
 
-export async function seedDatabase() {
+export async function seedDatabase(shouldDisconnect = false) {
   console.log('Starting database seed with exact Objective_Page.png data...');
   await connectDatabase();
 
@@ -175,12 +175,14 @@ export async function seedDatabase() {
   console.log(`Seeded 1 initial registration for ${registeredUser.name} (Reg ID: ${initialRegistration._id})`);
   console.log('Seed complete! All collections populated.');
 
-  await disconnectDatabase();
+  if (shouldDisconnect) {
+    await disconnectDatabase();
+  }
 }
 
 // Execute if run directly
 if (process.argv[1]?.includes('seed.ts')) {
-  seedDatabase().catch((err) => {
+  seedDatabase(true).catch((err) => {
     console.error('Seed script error:', err);
     process.exit(1);
   });

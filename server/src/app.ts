@@ -9,6 +9,7 @@ import { authRouter } from './modules/auth/auth.routes.js';
 import { competitionRouter } from './modules/competition/competition.routes.js';
 import { registrationRouter } from './modules/registration/registration.routes.js';
 import { userRouter } from './modules/user/user.routes.js';
+import { devRouter } from './modules/dev/dev.routes.js';
 
 export const createApp = (): Application => {
   const app: Application = express();
@@ -39,6 +40,7 @@ export const createApp = (): Application => {
   app.use('/api/competitions', competitionRouter);
   app.use('/api/competitions', registrationRouter);
   app.use('/api/users', userRouter);
+  app.use('/api/dev', devRouter);
 
   // 404 Handler for undefined routes
   app.use((_req: Request, _res: Response, next: NextFunction) => {

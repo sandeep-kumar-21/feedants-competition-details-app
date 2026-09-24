@@ -2,6 +2,9 @@ import mongoose from 'mongoose';
 import { env } from './env.js';
 
 export const connectDatabase = async (uri?: string): Promise<typeof mongoose> => {
+  if (mongoose.connection.readyState === 1) {
+    return mongoose;
+  }
   const connectionUri = uri || env.MONGODB_URI;
 
   try {
